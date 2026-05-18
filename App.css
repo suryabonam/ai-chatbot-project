@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.chat-container {
+  width: 700px;
+  height: 90vh;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f7f7f7;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.bot {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 12px 15px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.user .message-content {
+  background: #0b5ed7;
+  color: white;
+}
+
+.bot .message-content {
+  background: #e4e6eb;
+  color: black;
+}
+
+.input-area {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  background: white;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-area button {
+  margin-left: 10px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.input-area button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+}
+
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.clear-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+
+.welcome-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-screen h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.welcome-screen p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #64748b;
+}
+
+.welcome-screen ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-screen li {
+  font-size: 15px;
+  margin: 6px 0;
+  color: #64748b;
+}
+
+
+.logout-btn {
+  background: rgba(239,68,68,0.18);
+  color: #ffb4b4;
+  border: 1px solid rgba(239,68,68,0.3);
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+ background: rgba(239,68,68,0.3);
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+.auth-box {
+  width: 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 25px;
+  color: #1e3a8a;
+  font-size: 36px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  background: #1d4ed8;
+}
+
+.auth-box p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.auth-box span {
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+}
